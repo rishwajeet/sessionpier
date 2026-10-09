@@ -1,0 +1,216 @@
+{
+  "generatedAt": 1791572815.7808661,
+  "settings": {
+    "refreshSeconds": 300,
+    "notificationsEnabled": false,
+    "showDockIcon": true,
+    "globalShortcutEnabled": true,
+    "launchAtLogin": false
+  },
+  "accounts": [
+    {
+      "id": "demo-0",
+      "profileId": "demo-0",
+      "name": "Personal",
+      "provider": "claude",
+      "providerLabel": "Claude",
+      "default": true,
+      "email": "personal@example.com",
+      "plan": "Max",
+      "desktopRunning": false,
+      "desktopPID": null,
+      "desktopLoginSaved": true,
+      "historyReady": true,
+      "historySharingEnabled": true,
+      "remoteControlBlocked": false,
+      "requiresRemoteControlBlock": false,
+      "desktopRuntimeMatches": true,
+      "desktopPath": "/example",
+      "cliPath": "/example",
+      "connection": {
+        "state": "connected",
+        "message": ""
+      },
+      "usage": {
+        "status": "live",
+        "source": "Claude Code /usage",
+        "sampledAt": 1791572815.7808661,
+        "ageSeconds": 0,
+        "stale": false,
+        "meters": [
+          {
+            "id": "session",
+            "label": "Session",
+            "usedPercent": 24,
+            "windowMinutes": 300,
+            "resetsAt": 1791580015.7808661,
+            "resetDescription": null
+          },
+          {
+            "id": "weekly",
+            "label": "Weekly",
+            "usedPercent": 68,
+            "windowMinutes": 10080,
+            "resetsAt": 1791745615.7808661,
+            "resetDescription": null
+          }
+        ]
+      },
+      "lastAttemptAt": 1791572815.7808661,
+      "nextAttemptAt": 1791573115.7808661
+    },
+    {
+      "id": "demo-1",
+      "profileId": "demo-1",
+      "name": "Studio",
+      "provider": "claude",
+      "providerLabel": "Claude",
+      "default": false,
+      "email": "studio@example.com",
+      "plan": "Max",
+      "desktopRunning": true,
+      "desktopPID": null,
+      "desktopLoginSaved": true,
+      "historyReady": true,
+      "historySharingEnabled": true,
+      "remoteControlBlocked": false,
+      "requiresRemoteControlBlock": false,
+      "desktopRuntimeMatches": true,
+      "desktopPath": "/example",
+      "cliPath": "/example",
+      "connection": {
+        "state": "connected",
+        "message": ""
+      },
+      "usage": {
+        "status": "live",
+        "source": "Claude Code /usage",
+        "sampledAt": 1791572815.7808661,
+        "ageSeconds": 0,
+        "stale": false,
+        "meters": [
+          {
+            "id": "session",
+            "label": "Session",
+            "usedPercent": 12,
+            "windowMinutes": 300,
+            "resetsAt": 1791580015.7808661,
+            "resetDescription": null
+          },
+          {
+            "id": "weekly",
+            "label": "Weekly",
+            "usedPercent": 32,
+            "windowMinutes": 10080,
+            "resetsAt": 1791745615.7808661,
+            "resetDescription": null
+          }
+        ]
+      },
+      "lastAttemptAt": 1791572815.7808661,
+      "nextAttemptAt": 1791573115.7808661
+    },
+    {
+      "id": "demo-2",
+      "profileId": "demo-2",
+      "name": "Team",
+      "provider": "claude",
+      "providerLabel": "Claude",
+      "default": false,
+      "email": "team@example.com",
+      "plan": "Team",
+      "desktopRunning": false,
+      "desktopPID": null,
+      "desktopLoginSaved": true,
+      "historyReady": true,
+      "historySharingEnabled": true,
+      "remoteControlBlocked": true,
+      "requiresRemoteControlBlock": true,
+      "desktopRuntimeMatches": true,
+      "desktopPath": "/example",
+      "cliPath": "/example",
+      "connection": {
+        "state": "connected",
+        "message": ""
+      },
+      "usage": {
+        "status": "live",
+        "source": "Claude Code /usage",
+        "sampledAt": 1791572815.7808661,
+        "ageSeconds": 0,
+        "stale": false,
+        "meters": [
+          {
+            "id": "session",
+            "label": "Session",
+            "usedPercent": 100,
+            "windowMinutes": 300,
+            "resetsAt": 1791580015.7808661,
+            "resetDescription": null
+          },
+          {
+            "id": "weekly",
+            "label": "Weekly",
+            "usedPercent": 87,
+            "windowMinutes": 10080,
+            "resetsAt": 1791745615.7808661,
+            "resetDescription": null
+          }
+        ]
+      },
+      "lastAttemptAt": 1791572815.7808661,
+      "nextAttemptAt": 1791573115.7808661
+    },
+    {
+      "id": "demo-3",
+      "profileId": "demo-3",
+      "name": "Codex Pro",
+      "provider": "codex",
+      "providerLabel": "ChatGPT \u00b7 Codex",
+      "default": false,
+      "email": "codex.pro@example.com",
+      "plan": "Pro",
+      "desktopRunning": false,
+      "desktopPID": null,
+      "desktopLoginSaved": false,
+      "historyReady": true,
+      "historySharingEnabled": false,
+      "remoteControlBlocked": false,
+      "requiresRemoteControlBlock": false,
+      "desktopRuntimeMatches": true,
+      "desktopPath": "/example",
+      "cliPath": "/example",
+      "connection": {
+        "state": "connected",
+        "message": ""
+      },
+      "usage": {
+        "status": "live",
+        "source": "Codex app-server",
+        "sampledAt": 1791572815.7808661,
+        "ageSeconds": 0,
+        "stale": false,
+        "meters": [
+          {
+            "id": "session",
+            "label": "Session",
+            "usedPercent": 36,
+            "windowMinutes": 300,
+            "resetsAt": 1791580015.7808661,
+            "resetDescription": null
+          },
+          {
+            "id": "weekly",
+            "label": "Weekly",
+            "usedPercent": 51,
+            "windowMinutes": 10080,
+            "resetsAt": 1791745615.7808661,
+            "resetDescription": null
+          }
+        ]
+      },
+      "lastAttemptAt": 1791572815.7808661,
+      "nextAttemptAt": 1791573115.7808661
+    }
+  ]
+}

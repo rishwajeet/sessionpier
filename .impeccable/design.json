@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-09T19:36:13.460323+00:00",
+  "title": "Design System: SessionPier",
+  "extensions": {
+    "colorMeta": {
+      "accent-fill": {
+        "role": "primary",
+        "displayName": "Pier Indigo",
+        "tonalRamp": [
+          "oklch(15% 0.17320 277.150)",
+          "oklch(26.4% 0.17320 277.150)",
+          "oklch(37.9% 0.17320 277.150)",
+          "oklch(49.3% 0.17320 277.150)",
+          "oklch(60.7% 0.17320 277.150)",
+          "oklch(72.1% 0.17320 277.150)",
+          "oklch(83.6% 0.17320 277.150)",
+          "oklch(95% 0.17320 277.150)"
+        ],
+        "tonalRampPurpose": "Synthesized documentation strip; not an implemented native color scale."
+      },
+      "accent-foreground-light": {
+        "role": "primary",
+        "displayName": "Readable Indigo · Light",
+        "tonalRamp": [
+          "oklch(15% 0.16876 276.322)",
+          "oklch(26.4% 0.16876 276.322)",
+          "oklch(37.9% 0.16876 276.322)",
+          "oklch(49.3% 0.16876 276.322)",
+          "oklch(60.7% 0.16876 276.322)",
+          "oklch(72.1% 0.16876 276.322)",
+          "oklch(83.6% 0.16876 276.322)",
+          "oklch(95% 0.16876 276.322)"
+        ],
+        "tonalRampPurpose": "Synthesized documentation strip; not an implemented native color scale."
+      },
+      "accent-foreground-dark": {
+        "role": "primary",
+        "displayName": "Readable Indigo · Dark",
+        "tonalRamp": [
+          "oklch(15% 0.12387 280.447)",
+          "oklch(26.4% 0.12387 280.447)",
+          "oklch(37.9% 0.12387 280.447)",
+          "oklch(49.3% 0.12387 280.447)",
+          "oklch(60.7% 0.12387 280.447)",
+          "oklch(72.1% 0.12387 280.447)",
+          "oklch(83.6% 0.12387 280.447)",
+          "oklch(95% 0.12387 280.447)"
+        ],
+        "tonalRampPurpose": "Synthesized documentation strip; not an implemented native color scale."
+      },
+      "claude-identity": {
+        "role": "secondary",
+        "displayName": "Terracotta Identity",
+        "tonalRamp": [
+          "oklch(15% 0.12256 42.370)",
+          "oklch(26.4% 0.12256 42.370)",
+          "oklch(37.9% 0.12256 42.370)",
+          "oklch(49.3% 0.12256 42.370)",
+          "oklch(60.7% 0.12256 42.370)",
+          "oklch(72.1% 0.12256 42.370)",
+          "oklch(83.6% 0.12256 42.370)",
+          "oklch(95% 0.12256 42.370)"
+        ],
+        "tonalRampPurpose": "Synthesized documentation strip; not an implemented native color scale."
+      },
+      "codex-identity": {
+        "role": "secondary",
+        "displayName": "Teal Identity",
+        "tonalRamp": [
+          "oklch(15% 0.09989 171.972)",
+          "oklch(26.4% 0.09989 171.972)",
+          "oklch(37.9% 0.09989 171.972)",
+          "oklch(49.3% 0.09989 171.972)",
+          "oklch(60.7% 0.09989 171.972)",
+          "oklch(72.1% 0.09989 171.972)",
+          "oklch(83.6% 0.09989 171.972)",
+          "oklch(95% 0.09989 171.972)"
+        ],
+        "tonalRampPurpose": "Synthesized documentation strip; not an implemented native color scale."
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Workspace and settings headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Selected account identity."
+      },
+      "capacity": {
+        "displayName": "Capacity",
+        "purpose": "Tabular percentage in the main account list."
+      },
+      "account": {
+        "displayName": "Account",
+        "purpose": "Main account names."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Supporting prose."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Status, reset times and row actions."
+      },
+      "metadata": {
+        "displayName": "Metadata",
+        "purpose": "Provenance and limiting-window context."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "selection",
+        "value": "easeOut(duration: 0.2)",
+        "purpose": "Account selection fill; animation disabled when accessibilityReduceMotion is true."
+      },
+      {
+        "name": "fresh-reading-highlight",
+        "value": "1.2 seconds",
+        "purpose": "Green overlay lifetime following a changed fresh measurement; no custom interpolation."
+      },
+      {
+        "name": "native-popover",
+        "value": "NSPopover.animates = !accessibilityDisplayShouldReduceMotion",
+        "purpose": "Native popover animation; no custom duration or curve."
+      }
+    ],
+    "breakpoints": [],
+    "nativeSemantics": {
+      "platform": "macOS SwiftUI / AppKit",
+      "units": "Source geometry uses logical points; HTML previews map one logical point to one CSS pixel for compact documentation only.",
+      "surfaces": {
+        "rail": "NSColor.underPageBackgroundColor",
+        "detailAndMenu": "NSColor.controlBackgroundColor",
+        "window": "NSColor.windowBackgroundColor"
+      },
+      "foregrounds": [
+        "Color.primary",
+        ".secondary",
+        ".tertiary"
+      ],
+      "statusColors": {
+        "freshBelow80PercentUsed": "Color.green",
+        "freshAtLeast80PercentUsed": "Color.orange",
+        "freshAtLeast100PercentUsed": "Color.red",
+        "unfresh": "Color.secondary"
+      },
+      "neutralOverlays": {
+        "rowSeam": {
+          "source": "Color.primary",
+          "opacity": 0.09,
+          "lineWidth": 0.5
+        },
+        "meterTrack": {
+          "source": "Color.primary",
+          "opacity": 0.075
+        },
+        "hoverAndSearch": {
+          "source": "Color.primary",
+          "opacity": 0.035
+        }
+      },
+      "controlRendering": "Native styles own padding, shape, text treatment, focus, hover and disabled chrome unless explicitly overridden in source."
+    },
+    "evidence": {
+      "sources": [
+        "src/CompanionViews.swift",
+        "src/CompanionModel.swift",
+        "src/Accounts.swift"
+      ],
+      "visualInspection": "Dark native window and menu using labelled example accounts.",
+      "unverified": [
+        "Light appearance",
+        "Focus traversal",
+        "Interaction timing",
+        "Reduce Motion behavior"
+      ],
+      "notCanonized": [
+        "8-point QUICK ACCESS eyebrow; carried craft defect, excluded from reusable type roles."
+      ],
+      "previewBoundary": "HTML/CSS snippets are illustrative browser translations, not shipped UI or pixel-exact native components. CSS system colors and browser control styles do not resolve NSColor values."
+    }
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Illustrative native prominent action; browser control geometry and focus are not AppKit equivalents.",
+      "html": "<button class=\"ds-primary\">Open account ↗</button>",
+      "css": ".ds-primary {font-family:system-ui;font-size:12px;appearance:auto;background:rgb(36% 38% 83%);color:white;border:0;border-radius:999px;padding:7px 14px;} .ds-primary:hover {cursor:default;} .ds-primary:focus-visible {outline:auto;} .ds-primary:disabled {opacity:.5;}",
+      "previewOnly": [
+        "White text, capsule geometry, padding and disabled opacity approximate browser rendering; native button style owns these in the app."
+      ]
+    },
+    {
+      "name": "Secondary action",
+      "kind": "button",
+      "description": "Browser-native stand-in for the bordered continuation control.",
+      "html": "<button class=\"ds-secondary\">Continue local Code work…</button>",
+      "css": ".ds-secondary {font-family:system-ui;font-size:12px;appearance:auto;color:CanvasText;} .ds-secondary:hover {cursor:default;} .ds-secondary:focus-visible {outline:auto;}"
+    },
+    {
+      "name": "Borderless action",
+      "kind": "button",
+      "description": "Compact Open action using the appearance-specific accent.",
+      "html": "<button class=\"ds-borderless\">Open ↗</button>",
+      "css": ".ds-borderless {font-family:system-ui;font-size:12px;font-size:11px;font-weight:500;background:transparent;border:0;color:rgb(30% 32% 75%);} @media(prefers-color-scheme:dark){.ds-borderless{color:rgb(64% 66% 100%);}} .ds-borderless:hover {cursor:default;} .ds-borderless:focus-visible {outline:auto;}"
+    },
+    {
+      "name": "Search well",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "Plain native field within a low-opacity rounded well; native search symbol is omitted from this browser translation.",
+      "html": "<input class=\"ds-search\" aria-label=\"Find account\" placeholder=\"Find account\">",
+      "css": ".ds-search {font-family:system-ui;font-size:12px;color:CanvasText;background:color-mix(in srgb,CanvasText 3.5%,transparent);border:0;border-radius:6px;padding:7px;width:155px;} .ds-search:hover {cursor:text;} .ds-search:focus-visible {outline:auto;}"
+    },
+    {
+      "name": "Selected navigation",
+      "kind": "nav",
+      "refersTo": "navigation-selected",
+      "description": "The native sidebar selection, translated without its SF Symbol.",
+      "html": "<nav><button class=\"ds-navigation\" aria-current=\"page\">Your accounts</button></nav>",
+      "css": ".ds-navigation {font-family:system-ui;font-size:12px;font-weight:500;text-align:left;border:0;border-radius:6px;padding:9px 11px;background:rgb(36% 38% 83% / .11);color:rgb(30% 32% 75%);} @media(prefers-color-scheme:dark){.ds-navigation{color:rgb(64% 66% 100%);}} .ds-navigation:hover {cursor:default;} .ds-navigation:focus-visible {outline:auto;}"
+    },
+    {
+      "name": "Account comparison row",
+      "kind": "custom",
+      "refersTo": "account-row",
+      "description": "Generic account row showing fixed capacity alignment and the implemented neutral hover fill; identity mark omitted from the translation.",
+      "html": "<button class=\"ds-row\"><span class=\"ds-name\">Example account<span class=\"ds-provider\">Claude</span></span><span class=\"ds-value\">32%<span class=\"ds-provider\">Weekly</span></span></button>",
+      "css": ".ds-row {font-family:system-ui;font-size:12px;display:flex;align-items:center;gap:12px;width:100%;padding:17px 15px;text-align:left;color:CanvasText;background:transparent;border:0;border-bottom:.5px solid color-mix(in srgb,CanvasText 9%,transparent);} .ds-name{font-size:13px;font-weight:600;flex:1;} .ds-provider{display:block;font-size:11px;font-weight:400;margin-top:5px;opacity:.65;} .ds-value{width:116px;text-align:right;font-size:18px;font-weight:500;font-variant-numeric:tabular-nums;} .ds-row:hover{background:color-mix(in srgb,CanvasText 3.5%,transparent);} .ds-row:focus-visible{outline:auto;}",
+      "previewOnly": [
+        "Secondary-text opacity approximates the unresolved native secondary foreground."
+      ]
+    },
+    {
+      "name": "Capacity line",
+      "kind": "custom",
+      "description": "Generic 24%-used example. The browser translation retains labels, numeric rhythm and track geometry.",
+      "html": "<div class=\"ds-meter\" role=\"img\" aria-label=\"Session, 24% used, reset time not reported\"><div class=\"ds-meter-label\"><span>Session</span><span class=\"ds-meter-value\">24% used</span></div><div class=\"ds-track\"><div class=\"ds-fill\"></div></div><div class=\"ds-reset\">Reset time not reported</div></div>",
+      "css": ".ds-meter {font-family:system-ui;font-size:12px;color:CanvasText;display:grid;gap:8px;} .ds-meter-label{display:flex;justify-content:space-between;font-weight:500;} .ds-meter-value{font-weight:400;font-variant-numeric:tabular-nums;color:rgb(30% 32% 75%);} .ds-track{height:5px;border-radius:999px;background:color-mix(in srgb,CanvasText 7.5%,transparent);} .ds-fill{height:5px;width:24%;border-radius:999px;background:rgb(30% 32% 75% / .85);} .ds-reset{font-size:11px;opacity:.65;} @media(prefers-color-scheme:dark){.ds-meter-value{color:rgb(64% 66% 100%);}.ds-fill{background:rgb(64% 66% 100% / .85);}}",
+      "previewOnly": [
+        "Secondary-text opacity approximates the unresolved native secondary foreground."
+      ]
+    }
+  ],
+  "narrative": {
+    "northStar": "The Quiet Timetable",
+    "overview": "SessionPier uses the rhythm of a timetable: stable account rows, aligned capacity figures, restrained separators, and a clearly associated next action. Its materials are native macOS surfaces and controls. The reference shapes information density and comparison; it does not turn the interface into a literal railway display.\n\nThe product is a quiet utility with explicit identity and reading provenance. Indigo marks selection and action, while provider colors identify accounts and semantic colors describe capacity. Compact text and tabular figures make comparisons possible without adding decorative panels. The menu and full window share this vocabulary.\n\nThis record is extracted from src/CompanionViews.swift, src/CompanionModel.swift, and src/Accounts.swift. Dark-appearance captures with labelled example data were visually inspected. Light appearance is implemented through adaptive colors but has not been visually verified in this documentation pass. Native geometry is measured in macOS logical points; frontmatter pt values retain the source measurements, not a web layout specification.",
+    "keyCharacteristics": [
+      "Native SF typography and macOS control behavior.",
+      "Stable rows and tabular capacity figures.",
+      "Indigo selection; provider identity and usage status kept independent.",
+      "Explicit unknown, saved, and stale readings."
+    ],
+    "rules": [
+      {
+        "name": "The Separate Signals Rule",
+        "body": "Use provider tint for identity, indigo for action or selection, and semantic status colors for measured capacity. Keep a text label beside status color.",
+        "section": "colors"
+      },
+      {
+        "name": "The Native Type Rule",
+        "body": "Use the macOS system font for interface text and SF Symbols for native iconography. Apply monospaced digits to changing capacity figures, not to ordinary prose.",
+        "section": "typography"
+      },
+      {
+        "name": "The Quiet Surface Rule",
+        "body": "Separate regions with native surfaces, hairlines, and low-opacity state fills. Leave window, popover, sheet, and control elevation to macOS.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve the separation between provider identity, selection, and usage status.",
+      "Do show the limiting window beside remaining capacity and retain reading provenance in account details.",
+      "Do use semantic native surfaces and foreground styles so appearance follows macOS.",
+      "Do keep capacity figures aligned with monospaced digits and keep row order stable during refresh.",
+      "Do retain the measured native spacing and let standard controls own their focus and disabled states.",
+      "Do label example data clearly in public captures and keep account names and addresses generic."
+    ],
+    "donts": [
+      "Don't substitute a sampled dark screenshot color for a semantic NSColor.",
+      "Don't display a missing limit as unused capacity or give an older reading the visual authority of a fresh one.",
+      "Don't repurpose provider identity colors as warning or success states.",
+      "Don't add custom shadows or animated row reordering to this restrained native utility.",
+      "Don't promote the small QUICK ACCESS eyebrow into a reusable heading style."
+    ]
+  }
+}
